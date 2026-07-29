@@ -13,10 +13,10 @@ from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
 
 # --- Tank contents ---
-V_tank = 1.514
-rho = 990.0
-cp = 3650.0
-mass = rho * V_tank
+V_tank = 1.514               # tank volume of compound, cubic metres (m^3)
+rho = 990.0                  # compound density, kg/m^3  (nitrile latex ~ water-ish)
+cp = 3650.0                  # compound specific heat, J/(kg*K)  (aqueous dispersion)
+mass = rho * V_tank          # total mass of compound in the tank, kg
 T0 = 20.0                    # start at the temperature we want to hold
 
 # --- Heat load (calibrated from the measured warm-up) ---
